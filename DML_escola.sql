@@ -27,6 +27,8 @@ USE EscolaDB;
   set idade = 23
 where Nome= 'Joanna';
 
+
+
  --update Alunos
   --set idade = 22
 --where Nome= 'Emily';
@@ -36,7 +38,23 @@ INSERT INTO Alunos (Nome,Idade ,Email)
   ('Joanna', 18, 'joanna1@gmail.com');
 
   
+INSERT INTO Alunos (Nome,Idade ,Email)
+  VALUES 
+  ('Joanna', 18, 'joanna1@gmail.com');
+
+  
     update Alunos
   set idade = 30
 where Nome= 'Joanna';
 
+update Alunos
+set idade =19
+where id= 4;
+
+update Alunos
+set idade =14,
+email='joanna2@gmail.com'
+where id = 2;
+
+delete from Alunos
+where id = 1;
