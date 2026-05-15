@@ -22,4 +22,19 @@ iddepartamento int not null,
 
 );
 
+ create table Projetos
+(
+id int primary key identity (1,1),
+nome varchar (100) not null,
+orcamento decimal (12,2),
+DataInicio datetime,
+DataFim datetime,
+);
+
+create table FuncionariosProjetos(
+idFuncionarioProjeto int primary key identity (1,1),
+idFuncionario int,
+idProjetos int,
+DataEntrada date
+)
 
